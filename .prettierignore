@@ -1,0 +1,6 @@
+# IDEs / Editors
+/.idea
+/.vscode
+
+# Production
+/dist

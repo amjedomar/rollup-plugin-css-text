@@ -1,0 +1,44 @@
+{
+  "name": "rollup-plugin-css-text",
+  "version": "1.0.2",
+  "description": "A rollup plugin to generate javascript files that export the text of the css files",
+  "repository": "https://github.com/amjedomar/rollup-plugin-css-text",
+  "author": "Amjed Omar <amjedomar201@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "css",
+    "js",
+    "text"
+  ],
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "format": "prettier . --write",
+    "lint": "eslint . --ext .ts",
+    "prepublishOnly": "yarn build"
+  },
+  "peerDependencies": {
+    "rollup": ">=2.61.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "prettier": "^2.5.1",
+    "rollup": "^2.61.1",
+    "typescript": "^4.5.3"
+  }
+}

@@ -1,0 +1,13 @@
+# IDEs / Editors
+/.idea
+/.vscode
+
+# Dependencies
+/node_modules
+
+# Production
+/dist
+
+# Yarn logs
+yarn-error.log*
+yarn-debug.log*
