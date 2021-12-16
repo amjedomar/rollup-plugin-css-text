@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-css-text",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A rollup plugin to generate javascript files that export the text of the css files",
   "repository": "https://github.com/amjedomar/rollup-plugin-css-text",
   "author": "Amjed Omar <amjedomar201@gmail.com>",

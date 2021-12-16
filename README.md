@@ -87,6 +87,12 @@ const options = {
     postcss({
       /* the 'extract' option must be true */
       extract: true,
+      /**
+       * since we set 'minimize' to `true`,
+       * the comments will not exist in the generated javascript files
+       * even if the option 'includeComments' of the rollup-plugin-css-text
+       * set to 'in-file-only' or 'in-const'
+      */
       minimize: true,
     }),
     cssText({
@@ -107,6 +113,8 @@ Type: `'in-file-only'` | `'in-const'` | `false`
 Default: `'in-file-only'`
 
 if `in-file-only` the comments will be in the generated javascript css text file only. if `in-const` the comments will be in the exported const. if `false` the comments will be removed.
+
+> **note**: if you are using a plugin that deletes the comments of the outputted css files before this plugin, then the comments will not exist in the generated javascript css text files. even if the value of this option is `'in-file-only'` or `'in-const'` since this plugin generates these files from the outputted css files.
 
 **tsDeclaration**
 
